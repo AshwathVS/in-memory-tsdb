@@ -1,0 +1,11 @@
+configuration:
+  snapshot:
+    initialDelayMs: 300000
+    intervalMs: 300000
+    path: "/InMemoryTSDB/src/data/snapshot"
+  wal-properties:
+    path: "/InMemoryTSDB/src/data/wal"
+    rotation-byte-size: 50000 # 134217728 # 128 Mb
+  retention-ms: 1000 # 2 weeks
+
+core-pool-size: 2
